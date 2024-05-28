@@ -1,0 +1,122 @@
+/* Header container styling */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.homeclass {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+.maintext {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* Header styling */
+.Header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #55d6aa;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.Header h2 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: #b393d3;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #957dad,
+               1px 2px 0px #957dad,
+               1px 3px 0px #957dad,
+               1px 4px 0px #957dad,
+               1px 5px 0px #957dad,
+               1px 6px 0px #957dad,
+               1px 10px 5px rgba(16, 16, 16, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  color: #000;
+}
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding-top: 80px; 
+  font-family: Arial, sans-serif;
+}
+
+    .linkbutton {
+        --b: 3px;
+        --s: .45em;
+        --color: #373B44;
+        padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+        color: #d31313;
+        --_p: var(--s);
+        background:conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+        transition: .3s linear, color 0s, background-color 0s;
+        outline: var(--b) solid #0000;
+        outline-offset: .6em;
+        font-size: 16px;
+        border: 0;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 150px;
+      }
+  
+      .linkbutton:hover,
+      .linkbutton:focus-visible {
+        --_p: 0px;
+        outline-color: var(--color);
+        outline-offset: .05em;
+      }
+  
+      .linkbutton:active {
+        background: var(--color);
+        color: #fff;
+      }
+
+     

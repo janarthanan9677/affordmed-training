@@ -1,0 +1,138 @@
+/* UserAccountPage.css */
+.frame{
+  height: 100vh;
+  width: 100vw;
+  background-image: url('rockets.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.Account1 {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #03446A;
+}
+
+.Account1 h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.Account1 p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.Account1 .balance {
+  font-weight: bold;
+  color: #007bff;
+}
+.logout2 {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.logout2:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+} 
+
+
+
+/* GamePage.css */
+
+.card1 {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  perspective: 1000px;
+  position: relative; /* Add this to handle absolute positioning inside */
+}
+
+.card1:hover .content1 {
+  transform: rotateY(180deg);
+}
+
+.content1 {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative; /* Add this for stacking context */
+}
+
+.cards-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.front1,
+.back1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front1 {
+  background-color: #f9f9f9;
+  color: #03446A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.back1 {
+  background-color: #03446A;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+
+body.game-page { /* Specific to the game page */
+  margin: 0;
+  padding-top: 80px;
+  font-family: Arial, sans-serif;
+  background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
